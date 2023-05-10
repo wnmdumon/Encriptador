@@ -139,6 +139,8 @@ main {
 .infoIcon{
     width: 25px;
     height: 25px;
+    position: relative;
+    top: 3px;
 }
 footer{  
     width: 100%;
