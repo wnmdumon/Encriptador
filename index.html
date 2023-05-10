@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap" rel="stylesheet">
+    <title>Encripador</title>
+</head>
+<body>
+
+    <header>
+        <a href="https://www.aluracursos.com/" target="_blank"><img class="logo" src="imagenes/Logo.png" alt="Logo Alura"></a>
+        <a href="#footer"><H4> <img class="infoIcontacto" src="/imagenes/icons/correo-de-contacto.png" alt=""> Contacto</H4></a>  
+    </header>
+
+        <main>
+
+            <section>
+                <textarea class="text-area" cols="30" rows="10" placeholder="ingrese texto aqui"></textarea>
+             
+                <div>
+                    <h6 class="informacion"> <img class="infoIcon" src="/imagenes/icons/information_77957.svg" alt=""> Solo letras minúsculas y sin acentos</h6>
+                </div>
+
+                <div class="botonoes">
+                        <button class="btn-encriptar"  onclick= "btnEncriptar()">Encriptar</button>                
+                        <button  class="btn-desencriptar" onclick= "btnDesencriptar()" >Desencriptar</button>     
+                </div>
+            </section>
+            <section>
+                <div>
+                <textarea class="mensaje" id="resultado" cols="20" rows="11"></textarea>
+                    <button class="btn-copiar" onclick="copiarPortapapeles()" >Copiar</button>
+                </div>
+            </section>
+        </main>
+<script src="script.js"></script>
+<footer id="footer">
+    <section class="contact">
+        <div class="infoContact">
+            <a href="mailto:nico.dumon1@gmail.com"><img class="imgContac" src="/imagenes/icons/email-svgrepo-com.svg" alt="">nico.dumon1@gmail.com</a>
+        </div>
+        <div class="infoContact">
+            <a href="https://github.com/wnmdumon" target="_blank"><img class="imgContac" src="/imagenes/icons/github-svgrepo-com.svg" alt="">wnmdumon</a>
+        </div>
+        <div class="infoContact">
+            <a href="https://www.instagram.com/nicoodumon/" target="_blank"> <img class="imgContac" src="/imagenes/icons/instagram-svgrepo-com.svg" alt="">@nicoodumon</a>
+        </div>
+</footer>
+</body>
+</html>
