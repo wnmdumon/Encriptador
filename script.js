@@ -6,7 +6,20 @@ const mensaje = document.querySelector(".mensaje");
 //La letra "a" es convertida para "ai"
 //La letra "o" es convertida para "ober"
 //La letra "u" es convertida para "ufat"
+/*     var darkModeToggle = document.getElementById('darkMode');
+    var body = document.querySelector('body');
 
+    darkModeToggle.addEventListener('click',function(){
+    body.classList.toggle('dark-mode');
+}); */
+
+const darkModeToggle = document.getElementById('darkMode');
+const body = document.querySelector('body');
+
+darkModeToggle.onclick = function(){
+    darkModeToggle.classList.toggle('active');
+    body.classList.toggle('active');
+}
 
 
 function btnEncriptar(){

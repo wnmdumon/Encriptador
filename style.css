@@ -1,4 +1,7 @@
 *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
     font-family: 'inter';
     font-weight: 400;
     font-size: 32px;
@@ -8,24 +11,75 @@
 html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
-  }
+}
+
 header{
     background: beige;
+}
+
+#darkMode.active .toggle {
+    left: 40px;
+    background-image: url(imagenes/icons/icons8-alternar-apagado-50.png);
+}
+
+/* Estilos al activar el boton modo oscuro */
+
+body.active {
+    background-color: black;
+    & #darkMode {
+        background-image: url(imagenes/icons/icons8-alternar-encendido-48.png);
+    }
+    & .mensaje{
+        background-color: black;
+        color: #D8DFE8;
+        border: 1px solid white;
+        border-radius: 24px;
+    }
+    & header{
+        background-color: rgb(95, 95, 95);
+    }
+    & .logo{
+        filter: invert(1);
+    }
+    & main {
+        background-image: url(imagenes/8712851.jpg);
+        & .text-area{
+            color: #D8DFE8;
+        }
+        & h6{
+            color: #D8DFE8;
+        }
+    & ::placeholder{ color: white; }    
+    }
+    & .contact{
+        background-color: rgb(95, 95, 95)
+    }
+    & .btn-desencriptar {
+        background: #0A3871;
+        color: #D8DFE8;
+    }
+    & .btn-encriptar{
+        background: #0A3871;
+        color: #D8DFE8;
+    }
+    & .btn-copiar{
+        background: #0A3871;
+        color: #D8DFE8;
+    }
+    
 }
 
 #darkMode {
     width: 60px; 
     height: 30px;
     margin-left: 35%;
-    margin-top: 20px;
+    margin-top: 50px;
     background: url(imagenes/icons/icons8-alternar-apagado-50.png) no-repeat;
     background-position-y: -10px;
     position: fixed;
     border: none;
     cursor: pointer;
 }
-
-
 
 .logo {
     padding-top: 10px;
@@ -38,7 +92,7 @@ h4{
     color: #0A3871;
     float: right;
     position: relative;
-    bottom: 35px;
+    top: 5px;
     right: 18px;
 }
 
@@ -72,28 +126,22 @@ main {
     .text-area:focus {
         outline: none;
     }
+
 .mensaje{
     background: beige;
     background-image: url("imagenes/batman-doubt.gif");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 0% 75% ;
+    background-position: 0% 70% ;
     border: none;
-    border-radius: 24px;
     color: #0a3871;
     margin-left: 98px;
-    margin-top: 20px;
+    margin-top: 50px;
     padding-left: 20px;
     position: fixed;
     font-weight: bold;
 }
-/* #resultado .mensaje{
-    
-    background-image: url("imagenes/batman-doubt.gif");
-    
-    background-size: contain;
-    
-} */
+
 
 .mensaje:focus{
     outline: none;
@@ -148,7 +196,7 @@ main {
     cursor: pointer;
     height: 67px;
     margin-left: 108px;
-    margin-top: 485px;
+    margin-top: 500px;
     position: fixed;
     width: 336px;
 }
@@ -179,10 +227,7 @@ footer{
 .contact {
     width: 100%;
     background-color: beige;
-   /*  background-image: url(imagenes/225-2258825_transparent-lineas-png-lineas-azules-horizontales-png-png.png);
-    background-repeat: no-repeat;
-    background-size: 120%;
-    background-position: 50% 60%; */
+
 }
 
 .infoContact{
