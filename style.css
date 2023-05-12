@@ -4,6 +4,7 @@
     font-size: 32px;
     line-height: 150%;
 }
+
 html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
@@ -11,6 +12,20 @@ html {
 header{
     background: beige;
 }
+
+#darkMode {
+    width: 60px; 
+    height: 30px;
+    margin-left: 35%;
+    margin-top: 20px;
+    background: url(imagenes/icons/icons8-alternar-apagado-50.png) no-repeat;
+    background-position-y: -10px;
+    position: fixed;
+    border: none;
+    cursor: pointer;
+}
+
+
 
 .logo {
     padding-top: 10px;
@@ -35,16 +50,21 @@ h4{
 }
 
 main {
+    background-image: url(imagenes/desktop-wallpaper-heroes-del-silencio\ 2.jpg);
     display: flex;
     margin-bottom: 50px;
     margin-left: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
 
 .text-area {
     border: none;
     color: #0a3871;
-    margin-top: 90px;
+    margin-top: 40px;
     text-transform: lowercase;
+    background: transparent;
     
 }
 
@@ -54,8 +74,10 @@ main {
     }
 .mensaje{
     background: beige;
-    background-image: url("imagenes/Muñeco.png");
+    background-image: url("imagenes/batman-doubt.gif");
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0% 75% ;
     border: none;
     border-radius: 24px;
     color: #0a3871;
@@ -65,6 +87,13 @@ main {
     position: fixed;
     font-weight: bold;
 }
+/* #resultado .mensaje{
+    
+    background-image: url("imagenes/batman-doubt.gif");
+    
+    background-size: contain;
+    
+} */
 
 .mensaje:focus{
     outline: none;
@@ -103,6 +132,8 @@ main {
     height: 67px;
     width: 328px;
 }
+
+
 
 .btn-encriptar:hover{
     font-size: 42px;
